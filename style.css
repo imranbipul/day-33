@@ -1,0 +1,341 @@
+body,p,span{
+    font-family: 'Roboto', sans-serif;
+}
+h1,h2,h3,h4,h5,h6,a{
+    font-family: 'Rubik', sans-serif;
+}
+.container-fluid{
+    max-width: 1250px;
+}
+body .btn-primary{
+    padding: 10px 36px;
+    font-size: 17px;
+    color: rgb(113, 113, 247);
+    font-weight: 500;
+    background-color: #fff !important;
+    border: 1px solid #fff;
+    position: relative;
+    z-index: 1;
+    border-radius: 25px;
+ 
+}
+body .btn-primary::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 25px;
+    color: #fff !important;
+    background-color: rgb(87, 87, 243);
+    border: transparent;
+    z-index: -1;
+    transition: .4s;
+}
+body .btn-primary:hover{
+    border-color: rgb(87, 87, 243);
+}
+body .btn-primary:hover::after{
+    width: 100%;
+}
+
+.main-header{
+    background: #e0e0e0;
+
+}
+.navbar-brand img{
+    max-width: 33%;
+}
+.my-menu{
+
+}
+.my-menu ul{
+
+}
+/* .my-menu ul li{
+    display: inline-block;
+    margin-left: -4px;
+ 
+}
+.my-menu ul li a{
+    text-decoration: none;
+    padding: 0 18px;
+    color:#111;
+    font-size: 18px;
+    font-weight: 400;
+    transition: .4s;
+    position: relative;
+}
+
+.my-menu ul li a::before{
+    content: "";
+    position: absolute;
+    top: 240%;
+    left: 16px;
+    width: 0;
+    height: 3px;
+    color: blue;
+    background: blue;
+    transition: .4s;
+}
+.my-menu ul li a
+.my-menu ul li a:hover::before{
+    width: 70%;
+    
+} */
+.my-menu ul{
+    list-style: none;
+}
+.my-menu ul li{
+    display: inline-block;
+    position: relative;
+}
+.my-menu ul li a{
+    display: block;
+    padding: 10px 15px;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.my-menu ul li a:hover{
+    color: blue;
+}
+.my-menu ul li::before{
+    content: "";
+    position: absolute;
+    top: 140%;
+    left: 16px;
+    background: blue;
+    width: 0;
+    height:3px;
+    transition: .4s;
+
+}
+.my-menu ul li:hover::before{
+    width: 70%;
+}
+
+
+
+
+/* dropdown */
+.my-menu ul li{
+    position: relative;
+}
+.my-menu ul li ul{
+    list-style: none;
+    width: 250px;
+    position: absolute;
+    top: 145%;
+    padding: 0;
+    left: 0;
+    background-color: rgb(106, 106, 238);
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s ease-in-out;
+}
+.my-menu ul li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+}
+
+.my-menu ul li ul li{
+    display: inline-block;
+    margin: 0;
+    position: relative;
+  
+}
+.my-menu ul li ul li a{
+    display: block;
+    color: #fff;
+    padding: 7px 72px;
+    border-top:1px solid #fff;
+    border-bottom: 1px solid #fff;
+    position: relative;
+}
+.my-menu ul li ul li:hover >a{
+    color: #111;
+    background: #ddd;
+    transition: .4s;
+}
+.my-menu ul li ul li::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+}
+.my-menu ul li ul li:hover > a::before{
+    width: 0;
+}
+.my-menu ul span{
+    font-size: 11px;
+}
+.my-menu ul li{
+    position: relative;
+}
+.my-menu ul li .imran{
+    width: 200px;
+    background: #fff;
+    box-shadow: 4px 4px 4px rgb(0 0 0 / 80%);
+    border-radius: 5px;
+    padding: 12px 0;
+}
+.my-menu ul li .imran li{
+    display: inline-block;
+}
+.my-menu ul li ul li .error{
+    color: #ddd;
+    background: blue;
+    padding: 10px 40px;
+    border-radius: 5px;
+    display: block;
+}
+/* sub-drop */
+.my-menu ul li ul li{
+    position: relative;
+}
+.my-menu ul li ul li ul{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 200px;
+    background: orange;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+    transform: scaleY(0);
+}
+.my-menu ul li ul li:hover ul{
+    opacity: 1;
+    visibility: 1;
+    transform: scaleY(1);
+}
+.my-menu ul li ul li ul li{
+    display: block;
+
+}
+.my-menu ul li ul li ul li a{
+        display: block;
+        color: #fff;
+        border-bottom: 1px solid black;
+}
+.my-menu ul li ul li ul li a:hover{
+    background: #111;
+    color: #fff;
+}
+
+/* banare */
+.banare-img{
+ background-image: url("img/hero-image.jpg");
+ background-position: center center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ width: 580px;
+ height: 650px;
+ padding: 280px 0;
+ position: relative;
+ right: -82px;
+    top: -68px;
+    border-radius: 50% 0 30% 50%;
+}
+.item-content{
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 90vh;
+}
+.content-div{
+
+ 
+   
+}
+.content-div h6{
+    font-size: 20px;
+    color: #e73c3e;
+}
+.content-div h1{
+    font-size: 50px;
+    font-weight: 600;
+    padding: 21px 0;
+}
+.content-div p{
+    font-weight: 400;
+    color: #606060;
+    font-size: 20px;
+}
+body .content-div .btn-primary{
+    padding: 12px 36px;
+    font-size: 17px;
+    color: #fff;
+    font-weight: 500;
+    background-color:rgb(87, 87, 243)  !important;
+    border: 1px solid rgb(87, 87, 243);
+    position: relative;
+    z-index: 1;
+    margin: 31px 0;
+}
+body .content-div .btn-primary::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 25px;
+    background-color:#111;
+    transition: .4s;
+    z-index: -1;
+}
+body .content-div .btn-primary:hover{
+    border-color: #111;
+}
+body .content-div .btn-primary:hover::after{
+    width: 100%;
+}
+.content-div button{
+    padding: 12px 41px;
+}
+
+
+
+
+
+
+
+
+.last-menu{}
+/* .last-menu ul{
+    list-style: none;
+}
+.last-menu ul li{
+    display: inline-block;
+    position: relative;
+}
+.last-menu ul li a{
+    display: block;
+    padding: 10px 15px;
+    color: black;
+    text-decoration: none;
+}
+
+.last-menu ul li a:hover{
+    color: red;
+}
+.last-menu ul li::before{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: blue;
+    width: 0;
+    height:3px;
+
+}
+.last-menu ul li:hover::before{
+    width: 100%;
+} */
